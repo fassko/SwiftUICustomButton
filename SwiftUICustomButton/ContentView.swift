@@ -9,9 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    ZStack {
+    VStack(spacing: 40) {
       CustomButtonViewModifierView()
-      CustomButtonView()
+      
+      Button(action: {}, label: {
+        CustomButtonView()
+      })
+      
       CustomButtonStyleView()
     }
   }
